@@ -1,0 +1,28 @@
+<odoo>
+
+    <!-- Main Menu -->
+    <menuitem
+        id="menu_root"
+        name="Cani"
+        action="action_dog"
+        sequence="10"
+        web_icon="dog_module_ruben,static/description/icon.png"
+    />
+
+    <menuitem
+        id="menu_config"
+        name="Configurazione"
+        sequence="100"
+        parent="menu_root"
+    />
+
+    <!-- Configuration -->
+    <menuitem id="menu_settings" name="Impostazioni" sequence="10" parent="menu_config"/>
+
+    <menuitem id="menu_breed"
+    name="Razze"
+    sequence="20"
+    parent="menu_config"
+    action="action_dog_breed"/>
+
+</odoo>

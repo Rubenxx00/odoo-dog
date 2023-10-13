@@ -1,0 +1,42 @@
+<odoo>
+
+    <!-- Animal breed Tree View -->
+    <record id="view_animal_breed_tree" model="ir.ui.view">
+        <field name="name">view.animal.breed.tree</field>
+        <field name="model">animal.breed</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- Animal breed Form View -->
+    <record id="view_animal_breed_form" model="ir.ui.view">
+        <field name="name">view.animal.breed.form</field>
+        <field name="model">animal.breed</field>
+        <field name="arch" type="xml">
+            <form string="Razza">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_animal_breed" model="ir.actions.act_window">
+        <field name="name">Razze</field>
+        <field name="res_model">animal.breed</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crea una razza.
+            </p>
+        </field>
+    </record>
+
+</odoo>
